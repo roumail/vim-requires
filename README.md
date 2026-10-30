@@ -1,7 +1,7 @@
 # vim-requires
 
 The startup warning roumail's Vim plugins (git-extras, fzf-utils,
-dispatch-extras, pytest.vim, vim-prompts) show when a plugin they require
+dispatch-extras, pytest.vim, vim-prompts, vim-review) show when a plugin they require
 isn't loaded:
 
 ```

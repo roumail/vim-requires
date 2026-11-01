@@ -1,11 +1,11 @@
 # vim-requires
 
-The startup warning roumail's Vim plugins (git-extras, fzf-utils,
+The startup warning roumail's Vim plugins (gh-extras, fzf-utils,
 dispatch-extras, pytest.vim, vim-prompts, vim-review) show when a plugin they require
 isn't loaded:
 
 ```
-git-extras: requires tpope/vim-fugitive
+gh-extras: requires tpope/vim-fugitive
 ```
 
 The plugins define their commands as they load, so `vim +BranchDiff` and
@@ -24,7 +24,7 @@ In a plugin file, with each required plugin's `g:loaded_*` guard:
 
 ```vim
 try
-  call roumail_requires#check('git-extras', {
+  call roumail_requires#check('gh-extras', {
         \ 'tpope/vim-fugitive': 'g:loaded_fugitive',
         \ })
 catch /^Vim\%((\a\+)\)\=:E117:/
